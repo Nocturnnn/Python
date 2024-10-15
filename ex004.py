@@ -1,0 +1,8 @@
+algo = input('digite algo: ')
+print('isso é: {}' .format(algo.isalpha()))
+print('isso é: {}' .format(algo.isalnum()))
+print('isso é: {}' .format(algo.isascii()))
+print('isso é: {}' .format(algo.isdecimal()))
+print('isso é: {}' .format(algo.isdigit()))
+print('isso é: {}' .format(algo.isnumeric()))
+print('isso é: {}' .format(algo.isprintable()))
