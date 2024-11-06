@@ -1,18 +1,17 @@
-SouN = 'S'
-num = media = cont = somaPassada = maior = menor = 0
+resp = 5
+media = soma = quant = maior = menor = 0
+while resp in 'Ss':
+    num = int(input('digite um número: '))
+    soma += num
+    quant += 1
 
-while SouN != 'N':
-    somaPassada = num
-    menor = num
-    num = float(input('digite um número: '))
-    SouN = str(input('quer continuar? [S/N] ')).upper().strip()
-    cont += 1
-
-    somaPassada += num
-
-    if SouN == 'S':
-        media = num / cont
-
-    maior = num
-    if menor > maior:
-        maior = menor
+    if quant == 1:
+        maior = menor = num
+    else:
+        if num > maior:
+            maior = num
+        if num < menor:
+            menor = num
+media = soma / quant
+print('você digitou {} números e a média foi {}.' .format(quant, media))
+print('o maior valor foi {} e o menor foi {}.' .format(maior, menor))
